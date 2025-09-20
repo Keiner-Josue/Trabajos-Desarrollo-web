@@ -19,14 +19,17 @@ header {
     margin-bottom: 32px;
     text-align: center;
 }
+
 header h1 {
     font-size: 2.5em;
     letter-spacing: 2px;
     margin-bottom: 8px;
 }
+
 header nav {
     margin-top: 12px;
 }
+
 header nav a {
     color: #fff;
     text-decoration: none;
@@ -37,13 +40,15 @@ header nav a {
     padding-bottom: 2px;
     border-bottom: 2px solid transparent;
 }
+
 header nav a:hover {
     color: #b3d4fc;
     border-bottom: 2px solid #b3d4fc;
 }
 
 /* Contenido principal */
-#content, .container {
+#content,
+.container {
     flex: 1 0 auto;
     max-width: 900px;
     margin: 0 auto 40px auto;
@@ -78,25 +83,37 @@ header nav a:hover {
 
 /* Animación de entrada */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(30px);}
-    to { opacity: 1; transform: translateY(0);}
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Responsividad */
 @media (max-width: 700px) {
-    #content, .container {
+
+    #content,
+    .container {
         padding: 16px 6px;
         border-radius: 10px;
         min-height: 200px;
     }
+
     header {
         padding: 20px 0 14px 0;
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
     }
+
     header h1 {
         font-size: 1.5em;
     }
+
     #footer {
         font-size: 1em;
         padding: 14px 0 10px 0;
