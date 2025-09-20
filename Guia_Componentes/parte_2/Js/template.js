@@ -19,7 +19,7 @@ productos.forEach(producto => {
     const clon = template.content.cloneNode(true);
     clon.querySelector(".title").textContent = producto.titulo;
     clon.querySelector(".desc").textContent = producto.desc;
-    clon.querySelector(".precio").textContent = `$${producto.precio}`;
+    clon.querySelector(".precio").textContent = producto.precio.toLocaleString('es-CO')
     clon.querySelector(".imagen").src = producto.Imagen;
 
     contenedor.appendChild(clon);
